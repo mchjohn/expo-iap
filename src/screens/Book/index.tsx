@@ -4,7 +4,6 @@ export function Book() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Book Tab</Text>
-      <View style={styles.separator} />
     </View>
   );
 }
@@ -14,13 +13,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flex: 1,
     justifyContent: 'center',
-  },
-  separator: {
-    backgroundColor: 'gray',
-    height: 1,
-    marginVertical: 30,
-    opacity: 0.25,
-    width: '80%',
   },
   title: {
     fontSize: 20,

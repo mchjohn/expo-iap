@@ -4,26 +4,20 @@ export function Home() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Tab One</Text>
-      <View style={styles.separator} />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center',
     flex: 1,
-    justifyContent: 'center',
-  },
-  separator: {
-    backgroundColor: 'gray',
-    height: 1,
-    marginVertical: 30,
-    opacity: 0.25,
-    width: '80%',
+    paddingVertical: 32,
+    paddingHorizontal: 16,
+    backgroundColor: '#000814',
   },
   title: {
     fontSize: 20,
     fontWeight: 'bold',
+    color: '#edf2f4',
   },
 });

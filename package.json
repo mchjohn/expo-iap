@@ -6,6 +6,7 @@
     "format": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix && prettier \"**/*.{js,jsx,ts,tsx,json}\" --write",
     "ios": "expo start --ios",
     "start": "expo start",
+    "dev:server": "json-server src/api/db.json",
     "web": "expo start --web"
   },
   "dependencies": {
@@ -14,6 +15,7 @@
     "@react-navigation/stack": "^6.3.17",
     "expo": "~49.0.11",
     "expo-status-bar": "~1.6.0",
+    "json-server": "^1.0.0-alpha.22",
     "react": "18.2.0",
     "react-native": "0.72.6",
     "react-native-gesture-handler": "~2.12.0",
