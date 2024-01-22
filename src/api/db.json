@@ -1,10 +1,10 @@
 {
   "books": [
-    { "id": "1", "title": "O Senhor dos Anéis", "image": "https://m.media-amazon.com/images/I/71ZLavBjpRL._AC_UF1000,1000_QL80_.jpg"},
-    { "id": "2", "title": "O nome do vento", "image": "https://i0.wp.com/becodaspalavras.com/wp-content/uploads/2018/06/capa-post-nome-do-vento.jpg?fit=580%2C360&ssl=1"},
-    { "id": "3", "title": "A Roda do Tempo", "image": "https://m.media-amazon.com/images/I/61luxgJKWHL._AC_UF1000,1000_QL80_.jpg"},
-    { "id": "4", "title": "O Livro Malazano dos Caídos", "image": "https://m.media-amazon.com/images/I/61jfhKVoKtL._AC_UF1000,1000_QL80_.jpg"},
-    { "id": "5", "title": "O feiticeiro de Terramar", "image": "https://m.media-amazon.com/images/I/61Ll2xTMDsL._AC_UF1000,1000_QL80_.jpg"},
-    { "id": "6", "title": "As Crônicas de Gelo e Fogo", "image": "https://m.media-amazon.com/images/I/91+1SUO3vUL._AC_UF1000,1000_QL80_.jpg"}
+    { "id": "1", "title": "O Senhor dos Anéis", "price": 89.90, "image": "https://m.media-amazon.com/images/I/71ZLavBjpRL._AC_UF1000,1000_QL80_.jpg"},
+    { "id": "2", "title": "O nome do vento", "price": 89.90, "image": "https://i0.wp.com/becodaspalavras.com/wp-content/uploads/2018/06/capa-post-nome-do-vento.jpg?fit=580%2C360&ssl=1"},
+    { "id": "3", "title": "A Roda do Tempo", "price": 89.90, "image": "https://m.media-amazon.com/images/I/61luxgJKWHL._AC_UF1000,1000_QL80_.jpg"},
+    { "id": "4", "title": "O Livro Malazano dos Caídos", "price": 89.90, "image": "https://m.media-amazon.com/images/I/61jfhKVoKtL._AC_UF1000,1000_QL80_.jpg"},
+    { "id": "5", "title": "O feiticeiro de Terramar", "price": 89.90, "image": "https://m.media-amazon.com/images/I/61Ll2xTMDsL._AC_UF1000,1000_QL80_.jpg"},
+    { "id": "6", "title": "As Crônicas de Gelo e Fogo", "price": 89.90, "image": "https://m.media-amazon.com/images/I/91+1SUO3vUL._AC_UF1000,1000_QL80_.jpg"}
   ]
 }
