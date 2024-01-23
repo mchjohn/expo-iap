@@ -27,13 +27,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.micheljohn.expoiap",
+      "versionCode": 2
     },
     "extra": {
       "eas": {
         "projectId": "6b9c650b-8faa-45f9-bd02-fcfc89b11eec"
       }
     },
-    "owner": "micheljohn"
+    "owner": "micheljohn",
+    "plugins": ["react-native-iap"]
   }
 }
