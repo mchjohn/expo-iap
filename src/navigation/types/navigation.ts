@@ -3,11 +3,15 @@ import { RouteProp } from '@react-navigation/native';
 import { IBook } from '~/interfaces';
 
 export type RootTabParamList = {
-  Home: undefined;
+  HomeStack: undefined;
   Paywall: undefined;
+};
+
+export type RootStackParamList = {
+  Home: undefined;
   Book: {
     book: IBook;
   };
 };
 
-export type BookParamList = RouteProp<RootTabParamList, 'Book'>;
+export type BookParamList = RouteProp<RootStackParamList, 'Book'>;

@@ -14,7 +14,7 @@ export const TabBarIcon = (props: TabBarIconProps) => {
     <MaterialCommunityIcons
       name={props.name}
       size={props.size}
-      color={props.focused ? '#000814' : '#edf2f4'}
+      color={props.focused ? '#edf2f4' : 'rgba(0, 8, 20, 0.7)'}
     />
   );
 };
@@ -32,7 +32,7 @@ export const tabScreenOptions: BottomTabNavigationOptions = {
   headerShown: false,
   tabBarHideOnKeyboard: true,
   tabBarLabel({ focused, children }) {
-    return <Text style={{ color: focused ? '#000814' : '#edf2f4' }}>{children}</Text>;
+    return <Text style={{ color: focused ? '#edf2f4' : 'rgba(0, 8, 20, 0.7)' }}>{children}</Text>;
   },
   tabBarStyle,
 };
