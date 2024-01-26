@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import { View, FlatList, StyleSheet } from 'react-native';
+import Purchases from 'react-native-purchases';
 
 import { BookCard } from '~/components/BookCard';
 import { Loading } from '~/components/Loading';
+import { productSkus } from '~/constants/products';
 import { IBook } from '~/interfaces';
-import { sleep } from '~/utils/sleep';
 
 export function Home() {
   const [books, setBooks] = useState<IBook[]>([]);
@@ -13,20 +14,27 @@ export function Home() {
   const getBooks = async () => {
     setIsLoading(true);
 
-    await sleep();
+    try {
+      // const products = await Purchases.getProducts(productSkus as string[]);
+      const offerings = await Purchases.getOfferings();
 
-    await fetch('http://192.168.0.106:3000/books')
-      .then((response) => response.json())
-      .then((json) => {
-        setBooks(json);
-      })
-      .catch((error) => {
-        console.error(error);
-        console.error(JSON.stringify(error.message));
-      })
-      .finally(() => {
-        setIsLoading(false);
-      });
+      if (offerings && offerings.current) {
+        const { current } = offerings;
+        const { monthly } = current;
+
+        if (monthly) {
+          const { product } = monthly;
+          const { identifier } = product;
+
+          console.debug('Current product: ', product);
+          console.debug('Current identifier: ', identifier);
+        }
+      }
+    } catch (e) {
+      console.log('Deu ruim... ', e);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   useEffect(() => {
