@@ -14,9 +14,14 @@ web-build/
 # Native
 ios
 android
+keystore
 
 # macOS
 .DS_Store
 
 # Temporary files created by Metro to check the health of the file watcher
 .metro-health-check*
+
+# Google
+play_store_products.md
+expo-iap-33e613474afb.json

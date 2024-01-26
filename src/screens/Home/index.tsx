@@ -15,13 +15,14 @@ export function Home() {
 
     await sleep();
 
-    await fetch('http://192.168.122.1:3000/books')
+    await fetch('http://192.168.0.106:3000/books')
       .then((response) => response.json())
       .then((json) => {
         setBooks(json);
       })
       .catch((error) => {
         console.error(error);
+        console.error(JSON.stringify(error.message));
       })
       .finally(() => {
         setIsLoading(false);
