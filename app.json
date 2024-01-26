@@ -29,7 +29,7 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.micheljohn.expoiap",
-      "versionCode": 2
+      "versionCode": 3
     },
     "extra": {
       "eas": {
@@ -37,6 +37,8 @@
       }
     },
     "owner": "micheljohn",
-    "plugins": ["react-native-iap"]
+    "plugins": [
+      "react-native-iap"
+    ]
   }
 }
